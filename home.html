@@ -1,0 +1,51 @@
+<html>
+<head>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	    		rel="stylesheet">
+<title>Sales Home page</title>
+<style>
+table{
+    table-layout: fixed;
+}
+td{
+    word-wrap:break-word
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+This is my Sales home page!!! I have already logged in to Okta. <br/>
+Click <a href="https://prashanth.oktapreview.com/app/UserHome"> here </a> to go to Okta dashboard.
+
+Click <a href ="https://prashanth.oktapreview.com/login/signout?fromURI=http://localhost:8080/sales">HERE </a>to Logout
+</div>
+
+<div class="container">
+
+<table border=1 style='table-layout:fixed'>
+
+	<caption>Your Token details are </caption>
+	<thead>
+		<tr>
+			<th>Access Token</th>
+			<th>Id token</th>
+			<th>Refresh Token</th>
+			<th>Auth code</th>
+		</tr>
+	</thead>
+	<tbody>		
+ 		<tr>
+			<td style="max-width:500px;"> ${sales_access_token}</td>
+			<td style="max-width:500px;">${sales_id_token}</td>
+			<td style="max-width:250px;">${sales_refresh_token}</td>
+			<td style="max-width:250px;">${sales_auth_code}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</script> 
+</body>
+</html>
